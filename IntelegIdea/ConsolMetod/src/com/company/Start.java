@@ -16,7 +16,7 @@ public class Start {
         String method = reader.readLine();
         switch (method) {
             case "1":
-                store1.newProduct(new Phone(info.setModel(), info.setColor(), info.setPrice(), info.setNumder()));
+                store1.newProduct(info.setModel());
                 break;
             case "2":
                 store1.saleReport();

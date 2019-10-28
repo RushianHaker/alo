@@ -20,26 +20,34 @@ public class Store {
     boolean x = false;
     int indx = 0;
 
-    public void newProduct(Phone phone) throws IOException {
+    public void newProduct(String model) throws IOException {
         if (list.size() == 0) {
-            System.out.println("Информация....");
-            list.add(phone);
+
+            list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
         } else {
             for (int i = 0; i < list.size(); i++) {
-                if (list.get(i).model.equals(phone.model) && list.get(i).color.equals(phone.color)) {
-                    list.get(i).number += info.getNumber();
+                if (list.get(i).model.equals(model)) {
+                    System.out.println("bueno");
+                    if (list.get(i).color.equals(info.setColor())) {
+                        System.out.println("bueno");
+                        list.get(i).number += info.setNumder();
+                        break;
+                    }
                 } else {
-                    list.add(phone);
+                    list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
                     break;
                 }
             }
         }
+        System.out.println("Информация....");
         printerList();
+        System.out.println(" ");
         startcall.call();
     }
 
     void printerList() {
         for (int i = 0; i < list.size(); i++) {
+            System.out.println(" ");
             System.out.println("Модель телефона: " + list.get(i).model + "\nЦвет телефона: " + list.get(i).color + "\nКоличество телефонов на складе: " + list.get(i).number + "\nЦена одного телефона: " + list.get(i).price);
         }
         //System.out.println("Модель телефона: " + list.get(0).model + "\nЦвет телефона: " + list.get(0).color + "\nКоличество телефонов на складе: " + list.get(0).number + "\nЦена одного телефона: " + list.get(0).price);
