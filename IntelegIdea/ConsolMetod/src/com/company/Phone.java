@@ -13,4 +13,8 @@ public class Phone {
         this.number = number;
         this.price = price;
     }
+
+    public void addNumber (int number){
+        this.number = this.number + number;
+    }
 }

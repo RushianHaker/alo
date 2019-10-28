@@ -19,24 +19,38 @@ public class Store {
     static int purchaseSum = 0;
     boolean x = false;
     int indx = 0;
+    boolean getterModelEquals;
+    boolean getterColorEquals;
+    int getterPosI;
+    String getterColor;
 
     public void newProduct(String model) throws IOException {
+        getterModelEquals = false;
+        getterColorEquals = false;
         if (list.size() == 0) {
-
             list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
         } else {
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).model.equals(model)) {
-                    System.out.println("bueno");
+                    getterModelEquals = true;
+                    getterPosI = i;
                     if (list.get(i).color.equals(info.setColor())) {
-                        System.out.println("bueno");
-                        list.get(i).number += info.setNumder();
-                        break;
+                        getterColor = list.get(i).color;
+                        getterColorEquals = true;
+                    } else {
+                        getterColor = info.getColor();
+                        getterColorEquals = false;
                     }
-                } else {
-                    list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
-                    break;
                 }
+            }
+            if (getterModelEquals) {
+                if (getterColorEquals) {
+                    list.get(getterPosI).addNumber(info.setNumder());
+                } else {
+                    list.add(new Phone(model, getterColor, info.setPrice(), info.setNumder()));
+                }
+            } else {
+                list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
             }
         }
         System.out.println("Информация....");
@@ -61,26 +75,29 @@ public class Store {
         int currNumber = info.setNumder();
 
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).model.equals(currModel)) {
+            if (list.get(i).model.equals(currModel) && list.get(i).number < currNumber) {
+                System.out.println("Такого количества телефонов нет на складе, их всего - " + list.get(i).number);
+            }else if(list.get(i).model.equals(currModel)){
                 x = true;
                 indx = i;
                 break;
+            }else if(!list.get(i).model.equals(currModel)){
+                System.out.println("Такой модели нет на складе.");
             }
         }
 
         if (x) {
-            //System.out.println("Цена за 1 телефон:" + " " + list.get(indx).price);
-
             list.get(indx).number -= info.getNumber();
             purchaseSum += info.getNumber() * list.get(indx).price;
 
             System.out.println("Спасибо за покупку,осталось телефонов" + " " + list.get(indx).number);
+
             if (list.get(indx).number <= 0) {
                 list.remove(indx);
                 System.out.println("Вы все скупили.");
             }
         } else {
-            System.out.println("Такого телефона нет на складе,введите заново");
+            System.out.println("введите заново");
             purchase();
         }
         startcall.call();
