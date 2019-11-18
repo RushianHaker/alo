@@ -1,6 +1,7 @@
 package com.company;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
 import sun.rmi.runtime.NewThreadAction;
 
 import java.util.Locale;
@@ -12,13 +13,12 @@ import java.util.ArrayList;
 
 public class Store {
     public BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
-    ScanerInfo info = new ScanerInfo();
-    static Start startcall = new Start();
+    static ScanerInfo info = new ScanerInfo();
     ArrayList<Phone> list = new ArrayList<>();
 
     static int purchaseSum = 0;
-    boolean x = false;
-    int indx = 0;
+    boolean x;
+    int indx;
     boolean getterModelEquals;
     boolean getterColorEquals;
     int getterPosI;
@@ -28,7 +28,7 @@ public class Store {
         getterModelEquals = false;
         getterColorEquals = false;
         if (list.size() == 0) {
-            list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
+            list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumber()));
         } else {
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).model.equals(model)) {
@@ -45,26 +45,27 @@ public class Store {
             }
             if (getterModelEquals) {
                 if (getterColorEquals) {
-                    list.get(getterPosI).addNumber(info.setNumder());
+                    list.get(getterPosI).addNumber(info.setNumber());
                 } else {
-                    list.add(new Phone(model, getterColor, info.setPrice(), info.setNumder()));
+                    list.add(new Phone(model, getterColor, info.setPrice(), info.setNumber()));
                 }
             } else {
-                list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumder()));
+                list.add(new Phone(model, info.setColor(), info.setPrice(), info.setNumber()));
             }
         }
         System.out.println("Информация....");
         printerList();
         System.out.println(" ");
-        startcall.call();
+        info.SetChoise();
     }
 
-    void printerList() {
+    void printerList() throws IOException {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(" ");
             System.out.println("Модель телефона: " + list.get(i).model + "\nЦвет телефона: " + list.get(i).color + "\nКоличество телефонов на складе: " + list.get(i).number + "\nЦена одного телефона: " + list.get(i).price);
         }
-        //System.out.println("Модель телефона: " + list.get(0).model + "\nЦвет телефона: " + list.get(0).color + "\nКоличество телефонов на складе: " + list.get(0).number + "\nЦена одного телефона: " + list.get(0).price);
+        System.out.println(" ");
+        info.SetChoise();
     }
 
     public void purchase() throws IOException {
@@ -72,17 +73,19 @@ public class Store {
         System.out.println("Какую модель телефона вы хотите купить ?");
 
         String currModel = info.setModel();
-        int currNumber = info.setNumder();
+        int currNumber = info.setNumber();
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).model.equals(currModel) && list.get(i).number < currNumber) {
-                System.out.println("Такого количества телефонов нет на складе, их всего - " + list.get(i).number);
-            }else if(list.get(i).model.equals(currModel)){
+                System.out.println("Такого количества телефонов нет на складе, их всего: " + list.get(i).number);
+                info.SetChoise();
+            } else if (list.get(i).model.equals(currModel)) {
                 x = true;
                 indx = i;
                 break;
-            }else if(!list.get(i).model.equals(currModel)){
+            } else if (!list.get(i).model.equals(currModel)) {
                 System.out.println("Такой модели нет на складе.");
+                info.SetChoise();
             }
         }
 
@@ -95,16 +98,17 @@ public class Store {
             if (list.get(indx).number <= 0) {
                 list.remove(indx);
                 System.out.println("Вы все скупили.");
+                info.SetChoise();
             }
         } else {
             System.out.println("введите заново");
             purchase();
         }
-        startcall.call();
+        info.SetChoise();
     }
 
     public void saleReport() throws IOException {
         System.out.println("Общая сумма:" + " " + purchaseSum);
-        startcall.call();
+        info.SetChoise();
     }
 }

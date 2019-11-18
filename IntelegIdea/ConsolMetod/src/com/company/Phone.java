@@ -17,4 +17,8 @@ public class Phone {
     public void addNumber (int number){
         this.number = this.number + number;
     }
+
+    void removeNumber(int count){
+        this.number = this.number - number;
+    }
 }

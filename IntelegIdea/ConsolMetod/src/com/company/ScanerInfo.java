@@ -3,14 +3,18 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class ScanerInfo {
+    static Store store1 = new Store();
     public BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scan = new Scanner(System.in);
 
     String model;
     String color;
     int price;
     int number;
+    int choise;
 
     public String setModel() throws IOException {
         System.out.println("Введите модель - ");
@@ -49,17 +53,54 @@ public class ScanerInfo {
         return price;
     }
 
-    public int setNumder() throws IOException {
-        System.out.println("Введите количество -");
-        String second = reader.readLine();
-        this.number = Integer.parseInt(second);
-
+    public int setNumber() throws IOException {
+        System.out.println("Введите количество телефонов: ");
+        String justNeed = reader.readLine();
+        if (isInteger(justNeed)) {
+            this.number = Integer.parseInt(justNeed);
+            if (number < 1) {
+                System.out.println("Количество не может быть меньше 1.");
+                setNumber();
+            }
+        } else {
+            setNumber();
+        }
         return number;
+    }
+
+    boolean isInteger(String string) {
+        try {
+            Integer.valueOf(string);
+            return true;
+        } catch (NumberFormatException e) {
+            System.out.println("Введите число");
+            return false;
+        }
     }
 
     public int getNumber() {
-
         return number;
     }
-}
 
+    public void SetChoise() throws IOException {
+        System.out.println("-|New product (1)|-|Sale Report (2)|-|Purchase (3)|-|PrinterList (4)|-|Quit (5)|-" + '\n' + "Введите запрос:");
+
+        int method = scan.nextInt();
+        ScanerInfo info = new ScanerInfo();
+        switch (method) {
+            case 1:
+                store1.newProduct(info.setModel());
+                break;
+            case 2:
+                store1.saleReport();
+                break;
+            case 3:
+                store1.purchase();
+                break;
+            case 4:
+                store1.printerList();
+            case 5:
+                break;
+        }
+    }
+}
