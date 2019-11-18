@@ -4,13 +4,13 @@ public abstract class BaseClass {
 
     private static Integer salary;
 
-    public BaseClass(int salary){
-        this.salary = salary;
+    BaseClass(int salary) {
+        BaseClass.salary = salary;
     }
 
-    public Integer getSalary (){
-       return salary;
+    Integer getSalary() {
+        return salary;
     }
 
-     public abstract  void Salary(int salary);
+    public abstract void Salary(int salary);
 }
