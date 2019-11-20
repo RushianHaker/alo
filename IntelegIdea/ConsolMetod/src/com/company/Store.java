@@ -68,6 +68,9 @@ public class Store {
         info.SetChoise();
     }
 
+
+    //Переписать метод !!!!
+
     public void purchase() throws IOException {
         System.out.println(" ");
         System.out.println("Какую модель телефона вы хотите купить ?");

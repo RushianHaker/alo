@@ -2,10 +2,10 @@ package com.company;
 
 public abstract class BaseClass {
 
-    private static Integer salary;
+    private Integer salary;
 
     BaseClass(int salary) {
-        BaseClass.salary = salary;
+        this.salary = salary;
     }
 
     Integer getSalary() {
