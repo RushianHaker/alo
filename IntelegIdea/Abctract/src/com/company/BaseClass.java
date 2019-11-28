@@ -8,9 +8,11 @@ public abstract class BaseClass {
         this.salary = salary;
     }
 
-    Integer getSalary() {
-        return salary;
-    }
 
     public abstract void Salary(int salary);
+
+    Integer getSalary() {
+        return salary;
+
+    }
 }
