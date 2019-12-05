@@ -84,18 +84,17 @@ public class ScanerInfo {
 
     public void SetChoise() throws IOException {
         System.out.println("-|New product (1)|-|Sale Report (2)|-|Purchase (3)|-|PrinterList (4)|-|Quit (5)|-" + '\n' + "Введите запрос:");
-
         int method = scan.nextInt();
         ScanerInfo info = new ScanerInfo();
         switch (method) {
             case 1:
-                store1.newProduct(info.setModel());
+                store1.newProduct(setModel());
                 break;
             case 2:
                 store1.saleReport();
                 break;
             case 3:
-                store1.purchase();
+                store1.purchase(setModel());
                 break;
             case 4:
                 store1.printerList();

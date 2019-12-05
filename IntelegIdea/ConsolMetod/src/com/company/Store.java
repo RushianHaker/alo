@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 
 public class Store {
-    public BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
     static ScanerInfo info = new ScanerInfo();
     ArrayList<Phone> list = new ArrayList<>();
 
@@ -23,6 +22,14 @@ public class Store {
     boolean getterColorEquals;
     int getterPosI;
     String getterColor;
+    boolean smth;
+    boolean smthColor;
+
+    /*void remove() {
+        list.add(new Phone("a", "red", 2000, 5));
+        list.add(new Phone("b", "red", 2000, 5));
+        list.add(new Phone("c", "red", 2000, 5));
+    }*/
 
     public void newProduct(String model) throws IOException {
         getterModelEquals = false;
@@ -69,27 +76,40 @@ public class Store {
     }
 
 
-    //Переписать метод !!!!
+    public void purchase(String model) throws IOException {
 
-    public void purchase() throws IOException {
-        System.out.println(" ");
-        System.out.println("Какую модель телефона вы хотите купить ?");
-
-        String currModel = info.setModel();
-        int currNumber = info.setNumber();
+        String currModel = model;
+        x = false;
+        smth = false;
+        smthColor = false;
 
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).model.equals(currModel) && list.get(i).number < currNumber) {
-                System.out.println("Такого количества телефонов нет на складе, их всего: " + list.get(i).number);
-                info.SetChoise();
-            } else if (list.get(i).model.equals(currModel)) {
-                x = true;
-                indx = i;
-                break;
-            } else if (!list.get(i).model.equals(currModel)) {
-                System.out.println("Такой модели нет на складе.");
-                info.SetChoise();
+            if (list.get(i).model.equals(currModel)) {
+                String currColor = info.setColor();
+
+                if (list.get(i).color.equals(currColor)) {
+                    int currNumber = info.setNumber();
+
+                    if (list.get(i).number >= currNumber) {
+                        x = true;
+                        indx = i;
+                        smth = false;
+                        break;
+                    }
+                } else {
+                    smthColor = true;
+                }
+            } else {
+                smth = true;
             }
+        }
+
+        if (smth) {
+            System.out.println("Такой модели нет на складе.");
+        }
+
+        if (smthColor) {
+            System.out.println("Такого цвета нет на складе.");
         }
 
         if (x) {
@@ -105,7 +125,7 @@ public class Store {
             }
         } else {
             System.out.println("введите заново");
-            purchase();
+            purchase(info.setModel());
         }
         info.SetChoise();
     }
