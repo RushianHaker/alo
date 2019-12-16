@@ -1,6 +1,6 @@
 package com.company;
 
-public class MyArrayExerption extends Throwable {
+public class MyArrayExerption extends Exception {
      String something;
 
     MyArrayExerption(String something){
