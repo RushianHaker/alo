@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eff9430b-2345-4a88-ba4a-3aaf813341c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../exeption/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exeption/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/ConsolMetod.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/out/production/ConsolMetod/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/out/production/ConsolMetod/com/company/Phone.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/out/production/ConsolMetod/com/company/ScanerInfo.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/out/production/ConsolMetod/com/company/Start.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/out/production/ConsolMetod/com/company/Store.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/src/com/company/Phone.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/src/com/company/ScanerInfo.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/src/com/company/Start.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/ConsolMetod/src/com/company/Store.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/IDea.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/out/production/IDea/com/company/Cicle.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/out/production/IDea/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/out/production/IDea/com/company/Rect.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/out/production/IDea/com/company/Student.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/out/production/IDea/com/company/Vector2.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/src/com/company/Cicle.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/src/com/company/Rect.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/src/com/company/Student.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/IDea/src/com/company/Vector2.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/JavaBook_Vasil'ev/ShowMeAWindowDemo.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/JavaBook_Vasil'ev/ShowMeAWindowDemo.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/List.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/out/production/List/com/company/List.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/out/production/List/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/out/production/List/com/company/Node.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/src/com/company/List.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/List/src/com/company/Node.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/MergeSoft.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/out/production/MergeSoft/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/MergeSoft/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/Nasled.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/out/production/Nasled/META-INF/Nasled.kotlin_module" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/out/production/Nasled/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/out/production/Nasled/com/company/TreygolnPriam.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/out/production/Nasled/com/company/Treygolnik.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/src/com/company/TreygolnPriam.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Nasled/src/com/company/Treygolnik.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/Polimorfizm.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Polimorfizm/src/com/company/Treygolnik.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/SelectionSort.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/out/production/SelectionSort/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/SelectionSort/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/description.html" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/Vstavka.iml" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/out/production/Vstavka/com/company/Main.class" beforeDir="false" />
+      <change beforePath="D:/alo/IntelegIdea/Vstavka/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="D:/java/hellothistest/hellothistest.iml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\java\PolimorfizmTestJava\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Uv6hRWteFaHOO9v1d3pGkmtD6v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExeptionWithMassiv" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="PolimorfizmTestJava" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eff9430b-2345-4a88-ba4a-3aaf813341c2" name="Default Changelist" comment="" />
+      <created>1576224840611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576224840611</updated>
+      <workItem from="1576224844080" duration="1211000" />
+      <workItem from="1576485277268" duration="2903000" />
+      <workItem from="1576495819721" duration="108000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
