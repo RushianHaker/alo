@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class ScanerInfo {
+public class ScannerInfo {
     static Store store1 = new Store();
     public BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     Scanner scan = new Scanner(System.in);
@@ -80,26 +80,5 @@ public class ScanerInfo {
 
     public int getNumber() {
         return number;
-    }
-
-    public void SetChoise() throws IOException {
-        System.out.println("-|New product (1)|-|Sale Report (2)|-|Purchase (3)|-|PrinterList (4)|-|Quit (5)|-" + '\n' + "Введите запрос:");
-        int method = scan.nextInt();
-        ScanerInfo info = new ScanerInfo();
-        switch (method) {
-            case 1:
-                store1.newProduct(setModel());
-                break;
-            case 2:
-                store1.saleReport();
-                break;
-            case 3:
-                store1.purchase(setModel());
-                break;
-            case 4:
-                store1.printerList();
-            case 5:
-                break;
-        }
     }
 }

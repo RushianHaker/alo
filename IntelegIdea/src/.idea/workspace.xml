@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eff9430b-2345-4a88-ba4a-3aaf813341c2" name="Default Changelist" comment="">
+    <list default="true" id="d50a7f61-286a-4b6d-889f-28f46a3e24b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../IDea/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IDea/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../List/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MergeSoft/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MergeSoft/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nasled/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Nasled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfizmTestJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PolimorfizmTestJava/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,35 +14,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\java\PolimorfizmTestJava\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1Uv6hRWteFaHOO9v1d3pGkmtD6v" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1WQxlsh9HNFuLtAXUFT4YSzP9pU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../src" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TestTaskcs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,37 +36,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="PolimorfizmTestJava" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eff9430b-2345-4a88-ba4a-3aaf813341c2" name="Default Changelist" comment="" />
-      <created>1576224840611</created>
+      <changelist id="d50a7f61-286a-4b6d-889f-28f46a3e24b9" name="Default Changelist" comment="" />
+      <created>1579095773471</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576224840611</updated>
-      <workItem from="1576224844080" duration="1211000" />
-      <workItem from="1576485277268" duration="2903000" />
-      <workItem from="1576495819721" duration="108000" />
-      <workItem from="1579095760037" duration="14000" />
+      <updated>1579095773471</updated>
+      <workItem from="1579095774631" duration="13000" />
     </task>
     <servers />
   </component>
@@ -97,9 +58,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

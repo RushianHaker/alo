@@ -29,7 +29,7 @@ public class Main {
         System.out.println(cat.toString());
         */
 
-
+/*
     Car car = new Car(2,0,"Taiota","red", 11243);
     Sidan sidan = new Sidan(4,110,"Sidan","black",013313);
 
@@ -38,9 +38,9 @@ public class Main {
     for(Car info: cars) {
         info.InfoFromNavigator();
         }
+*/
 
 
-/*
         try {
             FileReader reader = new FileReader(new File("C:\\Users\\Omen\\Documents\\hello.txt"));
             Scanner scan = new Scanner(reader);
@@ -52,6 +52,6 @@ public class Main {
             System.out.println("Error Reading File");
             e.printStackTrace();
         }
-        */
+
     }
 }

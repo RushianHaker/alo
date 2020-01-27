@@ -6,6 +6,7 @@ public class Phone {
     String color;
     int price;
     int number;
+    String msg;
 
     public Phone(String model, String color,int price,int number){
         this.color = color;
@@ -18,7 +19,7 @@ public class Phone {
         this.number = this.number + number;
     }
 
-    void removeNumber(int count){
+    /*void removeNumber(int count){
         this.number = this.number - number;
-    }
+    }*/
 }
