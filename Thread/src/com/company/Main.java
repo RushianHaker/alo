@@ -10,17 +10,18 @@ public class Main {
 
         thread1 = new MyThread();
 
+
         Thread t1 = new Thread(() -> {
-            printToString(main,"first","second");
+            printToString(main, "first", "second");
         });
         Thread t2 = new Thread(() -> {
-            printToString(main,"second","third");
+            printToString(main, "second", "third");
         });
         Thread t3 = new Thread(() -> {
-            printToString(main,"third","four");
+            printToString(main, "third", "four");
         });
         Thread t4 = new Thread(() -> {
-            printToString(main,"four","first");
+            printToString(main, "four", "first");
         });
 
         t1.start();
@@ -34,7 +35,7 @@ public class Main {
         t4.join();
     }
 
-                                                                        
+
     public static void printToString(Object main, String letter1, String letter2) {
         synchronized (main) {
             try {
@@ -46,7 +47,7 @@ public class Main {
                     currentWord = letter2;
                     main.notifyAll();
                 }
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
