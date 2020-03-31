@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HelloController">
+   <children>
+      <Button fx:id="HelloButton" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="457.0" mnemonicParsing="false" onAction="#onClickHelloMethod" prefHeight="92.0" prefWidth="190.0" text="HelloButton">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+      <Label fx:id="HelloView" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="123.0" prefHeight="143.0" prefWidth="235.0">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
