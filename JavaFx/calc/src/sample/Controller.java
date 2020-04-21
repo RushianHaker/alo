@@ -3,6 +3,9 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 
 public class Controller {
@@ -11,6 +14,8 @@ public class Controller {
 
     @FXML
     private Text output;
+
+    private int i = 0;
 
     private long number1 = 0;
 
@@ -27,7 +32,20 @@ public class Controller {
 
         String value = ((Button) event.getSource()).getText();
         output.setText(output.getText() + value);
+        i++;
+
+        if (i == 7) inputLimitation();
+
     }
+
+
+    @FXML
+    public void inputLimitation() {
+        output.setText("Больше 6 вводить нельзя!");
+        start = true;
+        i = 0;
+    }
+
 
     @FXML
     public void processOperator(ActionEvent event) {
@@ -40,6 +58,7 @@ public class Controller {
             operator = value;
             number1 = Long.parseLong(output.getText());
             output.setText("");
+            i = 0;
         } else {
             if (operator.isEmpty())
                 return;
