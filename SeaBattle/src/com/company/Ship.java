@@ -12,7 +12,7 @@ public class Ship {
     String a = "0";
     String b = "*";
     String sum = a + b;
-    int win = 0;
+    boolean gameContinues = true;
 
     Random rnd = new Random();
     Scanner scanner = new Scanner(System.in);
@@ -46,7 +46,7 @@ public class Ship {
                 updateMap();
                 playerShout();
             }
-        } while (win == 0);
+        } while (gameContinues);
     }
 
     public void updateMap() {
@@ -63,18 +63,21 @@ public class Ship {
     }
 
 
-    public int checkWin() {
+    public boolean checkWin() {
         if (Arrays.deepEquals(map, exampleList)) {
-            win = 1;
+            gameContinues = false;
             System.out.println("Поздравляем, ты потапил все коробли");
             System.out.println("YOU WIN");
             System.exit(0);
         }
-        return win;
+        return gameContinues;
     }
 }
 
 /*
+старое условие метода checkWin()
+
+///////////////////////////////
 if (map[0][0] == '0' && map[0][1] == '0' && map[0][2] == '0' &&
                 map[1][0] == '0' && map[1][1] == '0' && map[1][2] == '0' &&
                 map[2][0] == '0' && map[2][1] == '0' && map[2][2] == '0' &&
@@ -89,4 +92,5 @@ if (map[0][0] == '0' && map[0][1] == '0' && map[0][2] == '0' &&
                 System.exit(0);
 
                 }
+///////////////////////////////
  */
