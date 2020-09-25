@@ -60,8 +60,7 @@ public class ScannerInfo {
             this.number = Integer.parseInt(justNeed);
             if (number < 1) {
                 System.out.println("Количество не может быть меньше 1.");
-                setNumber();
-            }
+                setNumber(); }
         } else {
             setNumber();
         }

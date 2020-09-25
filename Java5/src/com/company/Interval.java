@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 import static com.company.Calculator.scan;
 
 public class Interval {
@@ -15,6 +17,7 @@ public class Interval {
     }*/
 
     public static void numbersLine(int number) {
+
         if (number < 15) {
             System.out.println("[0-14]");
         } else if (number <= 35) {

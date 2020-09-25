@@ -6,7 +6,7 @@ public class Calculator {
 
     static Scanner scan = new Scanner(System.in);
 
-
+/*
     public static void main(String[] args) {
 
         int operand1 = getNumber();
@@ -18,7 +18,7 @@ public class Calculator {
 
         int result = calck(operand1, operand2, operator);
         System.out.println("Ответ: " + result);
-    }
+    }*/
 
     public static int calck(int operand1, int operand2, char operator) {
 
