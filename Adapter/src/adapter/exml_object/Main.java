@@ -3,6 +3,7 @@ package adapter.exml_object;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	Target target = new Adapter();
+    target.request();
     }
 }
