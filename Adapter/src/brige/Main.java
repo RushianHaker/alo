@@ -7,10 +7,6 @@ package brige;
  -> Отделяет абстракию от реализации
  */
 
-
-
-
-
 public class Main {
     public static void main(String[] args) {
 
