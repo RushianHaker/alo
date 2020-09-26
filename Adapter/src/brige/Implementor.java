@@ -1,4 +1,5 @@
 package brige;
 
-public class Implementor {
+public abstract class Implementor {
+    public abstract void operationImpl();
 }

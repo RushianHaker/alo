@@ -10,5 +10,12 @@ package brige;
 public class Main {
     public static void main(String[] args) {
 
+
+        Abstraction abstraction = null;
+        abstraction = new RefinedAbstaraction(new ConcreteImplementorA());
+        abstraction.operation();
+
+        abstraction = new RefinedAbstaraction(new ConcreteImplementorB());
+        abstraction.operation();
     }
 }
