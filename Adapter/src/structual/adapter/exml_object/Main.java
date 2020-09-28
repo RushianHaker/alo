@@ -1,4 +1,4 @@
-package adapter.exml_object;
+package structual.adapter.exml_object;
 
 public class Main {
 

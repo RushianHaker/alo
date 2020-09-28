@@ -1,4 +1,4 @@
-package composite;
+package structual.composite;
 
 public abstract class Component {
     protected String name;

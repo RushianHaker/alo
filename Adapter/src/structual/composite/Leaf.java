@@ -1,4 +1,4 @@
-package composite;
+package structual.composite;
 
 public class Leaf extends Component {
     public Leaf(String name) {

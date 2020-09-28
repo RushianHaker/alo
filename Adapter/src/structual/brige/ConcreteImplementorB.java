@@ -1,4 +1,4 @@
-package brige;
+package structual.brige;
 
 public class ConcreteImplementorB extends Implementor{
 

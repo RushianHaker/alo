@@ -37,3 +37,43 @@ public class Translator {
         vocabulary(words, ruWord);
     }
 }
+
+/*
+package com.company;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
+public class Translator {
+
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        translator();
+        String word = scan.nextLine();
+        vocabulary(word);
+    }
+
+    private static Map<String, String> words = new HashMap<>();
+
+    public static void translator() {
+        words.put("погода", "weather");
+        words.put("солнце", "sun");
+        words.put("небо", "sky");
+        words.put("дождь", "rain");
+        words.put("звезды", "stars");
+    }
+
+    public static String vocabulary(String ruWord) {
+        String raw = ruWord.toLowerCase().trim();
+        if (words.containsKey(raw)) {
+            return words.get(raw);
+        }
+        return "";
+    }
+}
+ */

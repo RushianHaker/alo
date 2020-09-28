@@ -1,4 +1,4 @@
-package decorator;
+package structual.decorator;
 
 public class ConcateDecoratorA extends Decorator {
     public String addedState = "Майка";

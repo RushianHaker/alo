@@ -1,4 +1,4 @@
-package brige;
+package structual.brige;
 
 public class ConcreteImplementorA extends Implementor{
     @Override

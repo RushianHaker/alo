@@ -1,4 +1,4 @@
-package facade;
+package structual.facade;
 
 public class SubSystemA {
     public void operationA(){

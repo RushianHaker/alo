@@ -1,4 +1,4 @@
-package flyweight;
+package structual.flyweight;
 
 
 

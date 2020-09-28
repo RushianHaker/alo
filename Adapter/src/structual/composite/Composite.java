@@ -1,6 +1,4 @@
-package composite;
-
-import jdk.nashorn.api.scripting.ScriptObjectMirror;
+package structual.composite;
 
 import java.util.ArrayList;
 import java.util.List;

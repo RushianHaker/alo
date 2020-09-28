@@ -1,4 +1,4 @@
-package brige;
+package structual.brige;
 
 public class RefinedAbstaraction extends Abstraction{
     public RefinedAbstaraction(Implementor implementor) {

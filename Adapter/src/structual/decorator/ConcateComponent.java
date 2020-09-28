@@ -1,4 +1,4 @@
-package decorator;
+package structual.decorator;
 
 public class ConcateComponent extends Component {
     @Override

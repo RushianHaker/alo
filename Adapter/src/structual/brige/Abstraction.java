@@ -1,4 +1,4 @@
-package brige;
+package structual.brige;
 
 public class Abstraction {
     protected Implementor implementor = null;

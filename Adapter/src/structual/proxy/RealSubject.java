@@ -1,4 +1,4 @@
-package proxy;
+package structual.proxy;
 
 public class RealSubject extends Subject{
     @Override

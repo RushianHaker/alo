@@ -1,4 +1,4 @@
-package adapter.exml_class;
+package structual.adapter.exml_class;
 
 public interface ITarget {
     void request();
