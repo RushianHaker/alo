@@ -1,0 +1,93 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'org.hidetake.ssh' version "2.10.1"
+}
+
+group = 'ithub.ru'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
+
+jar {
+	manifest {
+		attributes("Manifest-Version": "1.0",
+				"Main-Class": "ithub.ru.democommonlid.DemoCommonLidApplication",
+				"Class-Path": 'lib/' + configurations.compile.collect {it.getName() }.join(' lib/')
+		)
+	}
+	enabled = true
+}
+
+remotes {
+	webapp {
+		role 'masterNode'
+		host = remote host
+		user = ec2-user
+		password =
+		knownHosts = allowAnyHosts
+	}
+}
+
+
+ssh.settings {
+	timeoutSec = 600
+}
+
+
+task publish {
+	doLast {
+		ssh.run {
+			session(remotes.webapp) {
+				def fileName = 'demo-common-lid-0.0.1-SNAPSHOT.jar'
+				def newFileName = 'myapp-0.0.1-' + new Date().format('dd_MM_yyyy__hh_mm_ss')+'.jar'
+				def currentDir = '/var/MyApp/releases/20201009115945Z/'
+				def history = '/var/MyApp/releases/20201009115945Z/history/'
+				execute 'systemctl stop myapp'
+				execute ' mv ' + currentDir + fileName + ' ' + history + newFileName
+				put from: 'build/demo-common-lid-0.0.1-SNAPSHOT.jar', into: currentDir
+				execute 'systemctl start myapp'
+				def result = execute 'systemctl status myapp'
+				assert result.contains('running')
+			}
+		}
+	}
+}
+
+
+
+task BuildANDPublish {
+	dependsOn 'clean'
+	dependsOn 'build'
+	dependsOn 'publish'
+	tasks.findByName('build').mustRunAfter 'clean'
+	tasks.findByName('publish').mustRunAfter 'build'
+}
+
+
+
+

@@ -1,16 +1,16 @@
-package com.company;
+package Pattern;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-    private List<String> parts = new ArrayList<>();
+    private List<String> list = new ArrayList<>();
 
     public void add(String part) {
-        parts.add(part);
+        list.add(part);
     }
 
     public void show() {
-        parts.forEach(System.out::println);
+        list.forEach(System.out::println);
     }
 }

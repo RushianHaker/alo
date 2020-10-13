@@ -1,4 +1,4 @@
-package ExTest2;
+package Test13.Test2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,7 @@ public class Main {
         stringList.addAll(list);
         stringList.addAll(list);
         stringList.sort((a, b) -> a.compareTo(b));
+
 
         return stringList;
     }
