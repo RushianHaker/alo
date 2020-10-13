@@ -19,7 +19,7 @@ public class Main {
 
         while(a){
             System.out.print("> ");
-            String word = scan.nextLine().replaceAll("\\s+","");
+            String word = scan.nextLine().trim();
             list.add(word);
             if(word.toLowerCase().equals("end")){
                 a = false;
